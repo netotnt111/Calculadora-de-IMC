@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Calculadora de IMC Mil Grau</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
+    <title>Calculadora de IMC MilGrau</title>
   </head>
-  <body>
+  <div class="calculadora">
     <h1>Calculadora de IMC</h1>
-    <label for="altura">Altura (cm): </label>
-    <input id="altura" type="number" min="100" max="250"><br>
-    <label for="peso">Peso (kg): </label>
-    <input id="peso" type="number" min="0" max="250"><br>
-    <button onclick="calcularIMC()">Calcular o IMC</button>
-    <div id="resultadoIMC"></div>
-      <pre>
-    IMC                       CATEGORIA
-
-Até 18,5        |           Abaixo do peso
-De  25,0 - 29,9 |             Sobrepeso     
-De  18,5 - 24,9 |              Saudável      
-De  30,0 - 39,9 |               Obeso         
-Acima de 40     |  Extremo ou alto risco de obesidade 
-
-      </pre>
+      <div class="input">
+        <label for="altura">Altura (cm): </label>
+        <input id="altura" type="number" min="100" max="250"><br>
+      </div>
+      <div class="input">  
+        <label for="peso">Peso (kg): </label>
+        <input id="peso" type="number" min="0" max="250"><br>
+      </div>
+      <button onclick="calcularIMC()">Calcular o IMC</button>
+    <div class="resultado" id="resultadoIMC"></div>
+        <img src="Unilago_2015_1_51_51_0.png" width="100%">
+  </div>
+    <footer>
+      <small id="footer-text">© 2023 Francisco Medeiros Santos Neto.</small>
+    </footer>
   </body>
 </html>
