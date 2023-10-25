@@ -26,15 +26,3 @@ function calcularIMC() {
                     }
   }
 }
-
-// a tecla enter vai calcular!
-document.getElementById("altura").addEventListener('keyup', function(event) {
-  if (event.key === "Enter") {
-    calcularIMC();
-  }
-});
-document.getElementById("peso").addEventListener('keyup', function(event) {
-  if (event.key === "Enter") {
-    calcularIMC();
-  }
-});
