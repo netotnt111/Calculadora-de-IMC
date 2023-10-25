@@ -1,6 +1,8 @@
+// parte das variáveis e onde cada elemente terá seu caminho formado
+
 function calcularIMC() {
     var altura = parseFloat(document.getElementById("altura").value);
-    var peso   = parseFloat(document.getElementById("peso").value);
+    var peso = parseFloat(document.getElementById("peso").value);
     altura /= 100
 
 // comandos com if e else para que não seja mais necessário o display de uma imagem para saber nossa situação
@@ -26,3 +28,10 @@ function calcularIMC() {
                     }
   }
 }
+// a tecla enter vai calcular!
+    
+document.addEventListener('keypress', function(event) {
+  if (event.key === "Enter") {
+    calcularIMC();
+  }
+});
