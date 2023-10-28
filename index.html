@@ -7,20 +7,63 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     <title>Calculadora de IMC MilGrau</title>
+    <!-- Barra de navegação no topo da tela -->
+    <nav class="navbar">
+      <!-- Título -->
+      <div class="titulo-navbar">Foi aqui que passaram exercícios?</div>
+      <!-- Abas -->
+      <div class="abas">
+        <button class="aba-botao" onclick="openTab('aba1')">Calculadora Diversa</button>
+        <button class="aba-botao" onclick="openTab('aba2')">Qual a Capital?</button>
+        <button class="aba-botao" onclick="openTab('aba3')">Calculadora de IMC</button>
+        <button class="aba-botao" onclick="openTab('aba4')">Área²</button>
+        <button class="aba-botao" onclick="openTab('aba5')">Área³</button>
+        <button class="aba-botao" onclick="openTab('aba6')">E o meu desconto?</button>
+      </div>
+    </nav>
   </head>
-  <div class="calculadora">
-    <h1>Calculadora de IMC</h1>
-      <div class="input">
-        <label for="altura">Altura (cm): </label>
-        <input id="altura" type="number" min="100" max="250" placeholder="Insira sua altura aqui!"><br>
+  <body>
+    <div class="homepage" id="homepage">
+      <!-- Conteúdo da "Homepage" -->
+      <h1>Seja bem-vindo!</h1>
+      <p>Tudo que estava sendo pedido naquele PDF você pode encontrar aqui :D</p>
+    </div>
+    <div class="aba-conteudo" id="aba1">
+      <!-- Conteúdo da "Calculadora Diversa" -->
+      <div class="calculadora-diversa">
+        <h1>Calculadora diversa</h1>
       </div>
-      <div class="input">  
-        <label for="peso">Peso (kg): </label>
-        <input id="peso" type="number" min="0" max="250" placeholder="Insira seu peso aqui!"><br>
+      <script src="aba1.js"></script>
+    </div>
+    <div class="aba-conteudo" id="aba2">
+      <!-- Conteúdo do "Qual a Capital?"" -->
+      <div class="qual-capital">
+        <h1>Qual a capital?</h1>
       </div>
-      <button id="botao" onclick="calcularIMC()">Calcular o IMC</button>
-    <div class="resultado" id="resultadoIMC"></div>
-  </div>
+      <script src="aba2.js"></script>
+    </div>
+    <div class="aba-conteudo" id="aba3">
+      <!-- Conteúdo da "Calculadora de IMC" -->
+      <div class="calculadora-imc">
+        <h1>Calculadora de IMC</h1>
+        <div class="input">
+          <label for="altura">Altura (cm): </label>
+          <input id="altura" type="number" min="100" max="250" placeholder="Insira sua altura aqui!"><br>
+        </div>
+        <div class="input">  
+          <label for="peso">Peso (kg): </label>
+          <input id="peso" type="number" min="0" max="250" placeholder="Insira seu peso aqui!"><br>
+        </div>
+        <button id="botao" onclick="calcularIMC()">Calcular o IMC</button>
+        <div class="resultado" id="resultadoIMC"></div>
+        <script src="aba3.js"></script>
+      </div>
+    </div>
+    <!-- Botão home -->
+    <div class="botao-homepage">
+      <button onclick="irParaHomepage()">Voltar para a Homepage</button>
+    </div>
+    <!-- Footer -->
     <footer>
       <small id="footer-text">© 2023 Francisco Medeiros Santos Neto.</small>
     </footer>

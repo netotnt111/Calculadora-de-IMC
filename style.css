@@ -1,3 +1,4 @@
+/* Medidas de centralização */
 html, body {
     height: 100%;
 }
@@ -7,6 +8,53 @@ html {
     margin: auto;
 }
 
+/* Barra de navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 100; /* Para garantir que a barra de navegação esteja acima de outros elementos */
+    display: flex; /* Para alinhar os botões na barra */
+    flex-wrap: nowrap; /* Impede que os botões quebrem em várias linhas */
+    flex-direction: column; /* Elementos em uma coluna */
+}
+
+.titulo-navbar {
+    color: white;
+    text-align: center;
+    padding: 14px 0; /* Espaçamento apenas na vertical */
+}
+
+/* Homepage */
+.homepage {
+    background-color: #f0f0f0;
+
+}
+
+/* Para que nada apareça sem ser chamado */
+.aba-conteudo {
+    display: none;
+}
+
+/* Botões das abas */
+.aba-botao {
+    justify-content: center; 
+    flex: 1; /* Faz com que os botões preencham igualmente o espaço disponível na barra */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    background-color: #444; /* Fundo para destacar os botões */
+    white-space: nowrap; /* Impede que os botões se quebrem em várias linhas */
+}
+
+.aba-botao:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Corpo da página */
 body {
     display: table-cell;
     vertical-align: middle;
@@ -17,7 +65,28 @@ body {
     font-size: larger;
 }
 
-.calculadora {
+/* Calculadora de IMC */
+.calculadora-imc {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Calculadora Diversa */
+.calculadora-diversa {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Qual a capital? */
+.qual-capital {
     background-color: #fff;
     width: 600px;
     margin: 50px auto;
@@ -52,16 +121,16 @@ input {
 }
 
 button {
+    cursor: pointer;
+}
+
+#botao {
     width: 100%;
     padding: 10px;
     background-color: #b7d5e5;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-}
-
-button:disabled {
-    cursor: default;
 }
 
 .resultado {
@@ -72,6 +141,14 @@ button:disabled {
 pre {
     font-family: Inter;
     
+}
+
+.botao-homepage {
+    position: fixed;
+    bottom: 50px;
+    left: 90%; /* Para por do lado direito da tela */
+    transform: translateX(-50%); /* Com a centralização horizontal fica muito mais bonito */
+    z-index: 999; /* Acima de tudo e todos */
 }
 
 footer {
@@ -90,4 +167,5 @@ footer {
 footer-text {
     position: absolute;
 }
+
 
