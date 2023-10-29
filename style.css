@@ -125,6 +125,10 @@ input {
     width: 10%;
 }
 
+.input-diversa {
+    margin: 10px;
+}
+
 .input-imc {
     margin: 10px;
 }
@@ -133,13 +137,20 @@ button {
     cursor: pointer;
 }
 
-#botao {
+#botao-imc {
     width: 100%;
     padding: 10px;
     background-color: #b7d5e5;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+}
+
+#botao-div {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7d5e5;
+    border: none;
+    border-radius: 10px;
 }
 
 .resultado {

@@ -29,19 +29,22 @@
       <p>Tudo que estava sendo pedido naquele PDF você pode encontrar aqui :D</p>
     </div>
     <div class="aba-conteudo" id="aba1">
-      <!-- Conteúdo da "Calculadora Diversa" -->
-      <div class="calculadora-diversa">
-        <h1>Calculadora diversa</h1>
-          <div class="input-diversa">
-            <label for="numero1">Quanto é: </label>
-            <input id="numero1" type="number" placeholder="Insira seu número">
-            <label for="numero2"> com </label>
-            <input id="numero2" type="number" placeholder="Insira seu número">
-          </div>
-      </div>
-      <script src="aba1.js"></script>
-    </div>
     <!-- Conteúdo da "Calculadora Diversa" -->
+    <div class="calculadora-diversa">
+      <h1>Calculadora diversa</h1>
+        <div class="input-diversa">
+          <label for="numero1">Quanto é: </label>
+          <input id="numero1" type="number" placeholder="Insira">
+          <label for="numero2"> com </label>
+          <input id="numero2" type="number" placeholder="Insira">
+        </div>
+        <button id="botao-div" onclick="calcularDIV()">Ver resultados</button>
+        <div class="resultado" id="resultadoDIV"></div>
+    </div>
+    <script src="aba1.js"></script>
+  </div>
+    <!-- Conteúdo do "ResultadoDIV" -->
+  <!-- Conteúdo da "Calculadora Diversa" -->
     <div class="aba-conteudo" id="aba2">
       <!-- Conteúdo do "Qual a Capital?"" -->
       <div class="qual-capital">
@@ -61,7 +64,7 @@
           <label for="peso">Peso (kg): </label>
           <input id="peso" type="number" min="0" max="250" placeholder="Insira seu peso aqui!"><br>
         </div>
-        <button id="botao" onclick="calcularIMC()">Calcular o IMC</button>
+        <button id="botao-imc" onclick="calcularIMC()">Calcular o IMC</button>
         <div class="resultado" id="resultadoIMC"></div>
         <script src="aba3.js"></script>
       </div>

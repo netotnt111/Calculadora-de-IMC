@@ -25,6 +25,7 @@ peso.addEventListener("wheel", (event) => {
         handleMouseWheel(event, peso);
     }
 });
+
 // função da calculadora
 
 function calcularIMC() {
