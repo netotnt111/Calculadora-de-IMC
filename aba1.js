@@ -29,21 +29,27 @@ numero2.addEventListener("wheel", (event) => {
 function calcularDIV() {
     const numero1 = parseFloat(document.getElementById("numero1").value) || 0;
     const numero2 = parseFloat(document.getElementById("numero2").value) || 0;
-    
-    const soma = numero1 + numero2;
-    const subtracao = numero1 - numero2;
-    const multiplicacao = numero1 * numero2;
-    const divisao = numero1 / numero2;
-    const media = (soma / 4).toFixed(2);
+    const resultadoDIV = document.getElementById("resultadoDIV");
 
-    const resultadoDIV = `
-        Somando: ${soma}<br>
-        Subtraindo: ${subtracao}<br>
-        Multiplicando: ${multiplicacao}<br>
-        Dividindo: ${divisao}<br>
-        A média entre eles: ${media}
-    `;
-    document.getElementById("resultadoDIV").innerHTML = resultadoDIV;
+    if (numero1 === 0 && numero2 === 0) {
+        resultadoDIV.innerHTML = "Por favor preencha ambos os campos!"
+        return;
+    } 
+
+        const soma = numero1 + numero2;
+        const subtracao = numero1 - numero2;
+        const multiplicacao = numero1 * numero2;
+        const divisao = numero1 / numero2;
+        const media = (soma / 2).toFixed(2);
+
+        const resultados = `
+            Somando: ${soma}<br>
+            Subtraindo: ${subtracao}<br>
+            Multiplicando: ${multiplicacao}<br>
+            Dividindo: ${divisao}<br>
+            A média entre eles: ${media}
+        `;
+        document.getElementById("resultadoDIV").innerHTML = resultados;        
 }
 
 document.addEventListener('keypress', function(event) {
