@@ -116,7 +116,16 @@ input {
     border-radius: 10px;
 }
 
-.input {
+#numero1 {
+    width: 10%;
+    padding: 10px;
+}
+
+#numero2 {
+    width: 10%;
+}
+
+.input-imc {
     margin: 10px;
 }
 

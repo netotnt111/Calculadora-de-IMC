@@ -1,4 +1,30 @@
+const altura = document.getElementById("altura")
+const peso = document.getElementById("peso")
 
+function handleMouseWheel(event, input) {
+    event.preventDefaut();
+    const step = parseInt(input.getAttribute("step")) || 1;
+
+    if (event.deltaY < 0) {
+        // rolar pra cima 
+        input.stepUp(step);
+    } else {
+        // rolar pra baixo
+        input.stepDown(step);
+    }
+}
+
+altura.addEventListener("wheel", (event) => {
+    if (altura === document.activeElement){
+        handleMouseWheel(event, altura);
+    }
+});
+
+peso.addEventListener("wheel", (event) => {
+    if (peso === document.activeElement){
+        handleMouseWheel(event, peso);
+    }
+});
 // função da calculadora
 
 function calcularIMC() {

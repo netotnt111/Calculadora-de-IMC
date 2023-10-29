@@ -24,4 +24,3 @@ function openTab(tabId) {
 function irParaHomepage() {
   openTab('homepage');
 }
-
