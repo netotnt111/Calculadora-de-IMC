@@ -95,6 +95,15 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
+/* Área do Quadrado */
+.area-quadrado {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
 h2 {
     margin: 0 0 20px;
     color: #333;
@@ -116,6 +125,16 @@ input {
     border-radius: 10px;
 }
 
+select {
+    align-items: center;
+    align-content: center;
+    font-size: medium;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
 #numero1 {
     width: 10%;
     padding: 10px;
@@ -123,6 +142,7 @@ input {
 
 #numero2 {
     width: 10%;
+    padding: 10px;
 }
 
 .input-diversa {
@@ -130,6 +150,14 @@ input {
 }
 
 .input-imc {
+    margin: 10px;
+}
+
+.input-capital {
+    margin: 10px;
+}
+
+.input-quad {
     margin: 10px;
 }
 
@@ -153,6 +181,22 @@ button {
     border-radius: 10px;
 }
 
+#botao-capital {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7d5e5;
+    border: none;
+    border-radius: 10px;
+}
+
+#botao-quad {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7d5e5;
+    border: none;
+    border-radius: 10px;
+}
+
 .resultado {
     margin-top: 10px;
     font-weight: bold;
@@ -164,6 +208,7 @@ pre {
 }
 
 .botao-homepage {
+    width: 50px;
     position: fixed;
     bottom: 50px;
     left: 90%; /* Para por do lado direito da tela */
