@@ -104,6 +104,27 @@ body {
     border: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
+
+/* Área do Triângulo */
+.area-triangulo {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Área do Desconto */
+.desconto {
+    background-color: #fff;
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
 h2 {
     margin: 0 0 20px;
     color: #333;
@@ -161,6 +182,14 @@ select {
     margin: 10px;
 }
 
+.input-tri {
+    margin: 10px;
+}
+
+.input-desconto {
+    margin: 10px;
+}
+
 button {
     cursor: pointer;
 }
@@ -190,6 +219,22 @@ button {
 }
 
 #botao-quad {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7d5e5;
+    border: none;
+    border-radius: 10px;
+}
+
+#botao-tri {
+    width: 100%;
+    padding: 10px;
+    background-color: #b7d5e5;
+    border: none;
+    border-radius: 10px;
+}
+
+#botao-desconto {
     width: 100%;
     padding: 10px;
     background-color: #b7d5e5;

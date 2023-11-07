@@ -21,7 +21,7 @@ numero1.addEventListener("wheel", (event) => {
 });
 
 numero2.addEventListener("wheel", (event) => {
-    if (numero1 === document.activeElement) {
+    if (numero2 === document.activeElement) {
         handleMouseWheel(event, numero2);
     }
 });
