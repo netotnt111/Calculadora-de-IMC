@@ -65,57 +65,11 @@ body {
     font-size: larger;
 }
 
-/* Calculadora de IMC */
-.calculadora-imc {
-    background-color: #fff;
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Calculadora Diversa */
-.calculadora-diversa {
-    background-color: #fff;
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Qual a capital? */
-.qual-capital {
-    background-color: #fff;
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Área do Quadrado */
-.area-quadrado {
-    background-color: #fff;
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Área do Triângulo */
-.area-triangulo {
-    background-color: #fff;
-    width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
-
-/* Área do Desconto */
+.calculadora-imc,
+.calculadora-diversa,
+.qual-capital,
+.area-quadrado,
+.area-triangulo,
 .desconto {
     background-color: #fff;
     width: 600px;
@@ -156,84 +110,31 @@ select {
     border-radius: 10px;
 }
 
-#numero1 {
-    width: 10%;
-    padding: 10px;
-}
-
+#numero1, 
 #numero2 {
     width: 10%;
     padding: 10px;
 }
 
-.input-diversa {
-    margin: 10px;
-}
-
-.input-imc {
-    margin: 10px;
-}
-
-.input-capital {
-    margin: 10px;
-}
-
-.input-quad {
-    margin: 10px;
-}
-
-.input-tri {
-    margin: 10px;
-}
-
+.input-diversa, 
+.input-imc,
+.input-capital,
+.input-quad,
+.input-tri,
 .input-desconto {
     margin: 10px;
 }
+
 
 button {
     cursor: pointer;
 }
 
-#botao-imc {
-    width: 100%;
-    padding: 10px;
-    background-color: #b7d5e5;
-    border: none;
-    border-radius: 10px;
-}
-
-#botao-div {
-    width: 100%;
-    padding: 10px;
-    background-color: #b7d5e5;
-    border: none;
-    border-radius: 10px;
-}
-
-#botao-capital {
-    width: 100%;
-    padding: 10px;
-    background-color: #b7d5e5;
-    border: none;
-    border-radius: 10px;
-}
-
-#botao-quad {
-    width: 100%;
-    padding: 10px;
-    background-color: #b7d5e5;
-    border: none;
-    border-radius: 10px;
-}
-
-#botao-tri {
-    width: 100%;
-    padding: 10px;
-    background-color: #b7d5e5;
-    border: none;
-    border-radius: 10px;
-}
-
+#botao-imc,
+#botao-div,
+#botao-capital,
+#botao-quad,
+#botao-tri,
 #botao-desconto {
     width: 100%;
     padding: 10px;
@@ -277,5 +178,3 @@ footer {
 footer-text {
     position: absolute;
 }
-
-
