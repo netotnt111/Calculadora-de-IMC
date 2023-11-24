@@ -27,6 +27,12 @@ numero2.addEventListener("wheel", (event) => {
 });
 
 function calcularDIV() {
+    const boxSoma = document.getElementById("boxSoma").checked;
+    const boxSub = document.getElementById("boxSub").checked;
+    const boxMult = document.getElementById("boxMult").checked;
+    const boxDiv = document.getElementById("boxDiv").checked;
+    const boxMedia = document.getElementById("boxMedia").checked;
+
     const numero1 = parseFloat(document.getElementById("numero1").value) || 0;
     const numero2 = parseFloat(document.getElementById("numero2").value) || 0;
     const resultadoDIV = document.getElementById("resultadoDIV");
@@ -36,19 +42,37 @@ function calcularDIV() {
         return;
     } 
 
-        const soma = numero1 + numero2;
-        const subtracao = numero1 - numero2;
-        const multiplicacao = numero1 * numero2;
-        const divisao = numero1 / numero2;
-        const media = (soma / 2).toFixed(2);
+    let resultados = '';
 
-        const resultados = `
-            Somando: ${soma}<br>
-            Subtraindo: ${subtracao}<br>
-            Multiplicando: ${multiplicacao}<br>
-            Dividindo: ${divisao}<br>
-            A média entre eles: ${media}
-        `;
+    if (boxSoma) {
+        const soma = (numero1 + numero2);
+        resultados += 'Somando: ' + soma + '<br>';
+    }
+
+    if (boxSub) {
+        const sub = (numero1 - numero2);
+        resultados += 'Subtraindo: ' + sub + '<br>';
+    }
+
+    if (boxMult) {
+        const mult = (numero1 * numero2);
+        resultados += 'Multiplicando: ' + mult + '<br>';
+    }
+
+    if (boxDiv) {
+        if (numero2 !== 0) {
+            const div = (numero1 / numero2);
+            resultados += 'Dividindo: ' + div + '<br>';
+        } else {
+            resultados += 'Divisão por Zero (0) não é permitida.<br>';
+        }
+    }
+
+    if (boxMedia) {
+        const media = ((numero1 + numero2) / 2).toFixed(2);
+        resultados += 'A média entre eles: ' + media + '<br>';
+    }
+    
         document.getElementById("resultadoDIV").innerHTML = resultados;        
 }
 

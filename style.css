@@ -90,14 +90,43 @@ h2 {
     display: inline-flex;
 }
 
-input {
+input[type="number"] {
     align-items: center;
     align-content: center;
     font-size: medium;
     width: 90%;
     padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="image"] {
+    width: 90%;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    }
+    
+
+input[type="checkbox"] {
+    display: inline-block;
+    margin: 1px;
+}
+
+.operacao12,
+.operacao34,
+.operacao5 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.operacao12 input[type="checkbox"],
+.operacao34 input[type="checkbox"],
+.operacao5 input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
 }
 
 select {
