@@ -1,3 +1,11 @@
+:root{
+    ---cor-primaria: #2C2B30;
+    ---cor-secundaria: #4F4F51;
+    ---cor-fundo: #D6D6D6;
+    ---cor-botão1: #F58F7C;
+    ---cor-botão2: #F2C4CE;
+}
+
 /* Medidas de centralização */
 html, body {
     height: 100%;
@@ -14,7 +22,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(---cor-secundaria);
     z-index: 100; /* Para garantir que a barra de navegação esteja acima de outros elementos */
     display: flex; /* Para alinhar os botões na barra */
     flex-wrap: nowrap; /* Impede que os botões quebrem em várias linhas */
@@ -29,8 +37,13 @@ html {
 
 /* Homepage */
 .homepage {
-    background-color: #f0f0f0;
-
+    background-color: var(---cor-fundo);
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px;
+    border-radius: 200px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 /* Para que nada apareça sem ser chamado */
@@ -40,17 +53,18 @@ html {
 
 /* Botões das abas */
 .aba-botao {
+    border-radius: 8px;
     justify-content: center; 
     flex: 1; /* Faz com que os botões preencham igualmente o espaço disponível na barra */
     color: white;
     text-align: center;
     padding: 14px 16px;
-    background-color: #444; /* Fundo para destacar os botões */
+    background-color: var(---cor-botão1); /* Fundo para destacar os botões */
     white-space: nowrap; /* Impede que os botões se quebrem em várias linhas */
 }
 
 .aba-botao:hover {
-    background-color: #ddd;
+    background-color: var(---cor-botão2);
     color: black;
 }
 
@@ -60,7 +74,7 @@ body {
     vertical-align: middle;
     margin: auto;
     font-family: Inter, sans-serif;
-    background-color: #f2f2f2;
+    background-color: var(---cor-primaria);
     text-align: center;
     font-size: larger;
 }
@@ -71,12 +85,12 @@ body {
 .area-quadrado,
 .area-triangulo,
 .desconto {
-    background-color: #fff;
+    background-color: var(---cor-secundaria);
     width: 600px;
     margin: 50px auto;
     padding: 20px;
     border: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
 }
 
 h2 {
@@ -102,7 +116,6 @@ input[type="number"] {
 input[type="image"] {
     width: 90%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 10px;
     }
     
@@ -157,6 +170,7 @@ select {
 
 button {
     cursor: pointer;
+
 }
 
 #botao-imc,
@@ -167,9 +181,18 @@ button {
 #botao-desconto {
     width: 100%;
     padding: 10px;
-    background-color: #b7d5e5;
+    background-color: var(---cor-botão1);
     border: none;
     border-radius: 10px;
+}
+
+#botao-imc:hover,
+#botao-div:hover,
+#botao-capital:hover,
+#botao-quad:hover,
+#botao-tri:hover,
+#botao-desconto:hover {
+    background-color: var(---cor-botão2);
 }
 
 .resultado {
@@ -178,8 +201,7 @@ button {
 }
 
 pre {
-    font-family: Inter;
-    
+    font-family: Inter;    
 }
 
 .botao-homepage {
