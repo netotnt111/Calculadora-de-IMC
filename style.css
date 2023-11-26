@@ -37,6 +37,7 @@ html {
 
 /* Homepage */
 .homepage {
+    
     background-color: var(---cor-fundo);
     width: 500px;
     margin: 50px auto;
@@ -90,7 +91,12 @@ body {
     margin: 50px auto;
     padding: 20px;
     border: 5px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(0 0 0);
+}
+
+.titulos {
+    text-shadow: rgb(255 255 255 / .3) 1px -1px, rgb(255 255 255 / .3) -1px 1px, rgb(255 255 255 / .3) -1px -1px, rgb(0 0 0 / .3) 1px 1px;
 }
 
 h2 {
