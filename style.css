@@ -64,10 +64,20 @@ html {
     white-space: nowrap; /* Impede que os botões se quebrem em várias linhas */
 }
 
-.aba-botao:hover {
+/* Crescer */
+.aba-botao {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .aba-botao:hover, .aba-botao:focus, .aba-botao:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     background-color: var(---cor-botão2);
     color: black;
-}
+  }
 
 /* Corpo da página */
 body {
@@ -96,7 +106,7 @@ body {
 }
 
 .titulos {
-    text-shadow: rgb(255 255 255 / .1) 1px -1px, rgb(255 255 255 / .1) -1px 1px, rgb(255 255 255 / .1) -1px -1px, rgb(0 0 0 / .1) 1px 1px;
+    text-shadow: rgb(255 255 255 / .3) 1px -1px, rgb(255 255 255 / .3) -1px 1px, rgb(255 255 255 / .3) -1px -1px, rgb(0 0 0 / .3) 1px 1px;
 }
 
 h2 {
@@ -192,14 +202,45 @@ button {
     border-radius: 10px;
 }
 
-#botao-imc:hover,
-#botao-div:hover,
-#botao-capital:hover,
-#botao-quad:hover,
-#botao-tri:hover,
-#botao-desconto:hover {
-    background-color: var(---cor-botão2);
-}
+/* Encher */
+.botao-resultado {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .botao-resultado:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(---cor-botão2);
+    border-radius: 10px;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .botao-resultado:hover, .botao-resultado:focus, .botao-resultado:active {
+    color: black;
+  }
+  .botao-resultado:hover:before, .botao-resultado:focus:before, .botao-resultado:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    border-radius: 10px;
+  }
 
 .resultado {
     margin-top: 10px;
@@ -218,6 +259,19 @@ pre {
     transform: translateX(-50%); /* Com a centralização horizontal fica muito mais bonito */
     z-index: 999; /* Acima de tudo e todos */
 }
+
+/* Crescer */
+.botao-homepage {
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .botao-homepage:hover, .botao-homepage:focus, .botao-homepage:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 
 footer {
     background-color: rgba(0, 0, 0, 0.8);
