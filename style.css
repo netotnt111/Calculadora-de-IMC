@@ -66,7 +66,11 @@ html {
 
 /* Crescer */
 .aba-botao {
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
@@ -204,10 +208,11 @@ button {
 
 /* Encher */
 .botao-resultado {
+    display: inline-block;
+    vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    border-radius: 10px;
     position: relative;
     -webkit-transition-property: color;
     transition-property: color;
@@ -232,6 +237,8 @@ button {
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+    -webkit-transition-property: transform;
+    transition-property: transform;
   }
   .botao-resultado:hover, .botao-resultado:focus, .botao-resultado:active {
     color: black;
@@ -239,7 +246,6 @@ button {
   .botao-resultado:hover:before, .botao-resultado:focus:before, .botao-resultado:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    border-radius: 10px;
   }
 
 .resultado {
@@ -262,7 +268,11 @@ pre {
 
 /* Crescer */
 .botao-homepage {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
